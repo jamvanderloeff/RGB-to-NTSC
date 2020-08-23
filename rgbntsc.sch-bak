@@ -494,6 +494,8 @@ F 4 "C14663" H 5600 3150 50  0001 C CNN "LCSC"
 	1    5600 3150
 	1    0    0    -1  
 $EndComp
+Text Notes 2450 650  0    50   ~ 0
+damn OSSC's symbols are ugly
 $Comp
 L power:+5V #PWR012
 U 1 1 5CCDA117
