@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name rgbntsc-rescue)(type Legacy)(uri ${KIPRJMOD}/rgbntsc-rescue.lib)(options "")(descr ""))
+)
