@@ -69,10 +69,10 @@ L rgbntsc-rescue:R_Small-Device R9
 U 1 1 5FA9BD44
 P 5250 6750
 F 0 "R9" H 5309 6796 50  0000 L CNN
-F 1 "1k3" H 5309 6705 50  0000 L CNN
+F 1 "1k5" H 5309 6705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 5250 6750 50  0001 C CNN
 F 3 "~" H 5250 6750 50  0001 C CNN
-F 4 "C17384" H 5250 6750 50  0001 C CNN "LCSC"
+F 4 "C4310" H 5250 6750 50  0001 C CNN "LCSC"
 	1    5250 6750
 	1    0    0    -1  
 $EndComp
@@ -160,7 +160,7 @@ F 3 "" H 6050 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 4500 6000 0    50   ~ 0
-2.8V really LDO
+1.8V really LDO
 Wire Wire Line
 	4600 1900 5050 1900
 Wire Wire Line
