@@ -29,57 +29,6 @@ F 3 "" H 4300 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L rgbntsc-rescue:MCP1700-2802E_SOT23-Regulator_Linear U4
-U 1 1 5FA9BD42
-P 4800 6300
-F 0 "U4" H 4800 6542 50  0000 C CNN
-F 1 "SC6206B-65K5" H 4800 6451 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4800 6525 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 4800 6300 50  0001 C CNN
-F 4 "C88294" H 4800 6300 50  0001 C CNN "LCSC"
-	1    4800 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L rgbntsc-rescue:R_Small-Device R8
-U 1 1 5FA9BD43
-P 5250 6450
-F 0 "R8" H 5309 6496 50  0000 L CNN
-F 1 "1k" H 5309 6405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5250 6450 50  0001 C CNN
-F 3 "~" H 5250 6450 50  0001 C CNN
-F 4 "C17513" H 5250 6450 50  0001 C CNN "LCSC"
-	1    5250 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 6300 5250 6300
-Wire Wire Line
-	5250 6300 5250 6350
-Wire Wire Line
-	5250 6550 5250 6600
-Wire Wire Line
-	4800 6600 5250 6600
-Connection ~ 5250 6600
-Connection ~ 5250 6300
-Wire Wire Line
-	5250 6600 5250 6650
-$Comp
-L rgbntsc-rescue:R_Small-Device R9
-U 1 1 5FA9BD44
-P 5250 6750
-F 0 "R9" H 5309 6796 50  0000 L CNN
-F 1 "1k5" H 5309 6705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5250 6750 50  0001 C CNN
-F 3 "~" H 5250 6750 50  0001 C CNN
-F 4 "C4310" H 5250 6750 50  0001 C CNN "LCSC"
-	1    5250 6750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 6850 5250 6900
-Connection ~ 5250 6900
-$Comp
 L rgbntsc-rescue:C_Small-Device C5
 U 1 1 5C9FE32E
 P 4500 1900
@@ -159,8 +108,6 @@ F 3 "" H 6050 6900 50  0001 C CNN
 	1    6050 6900
 	1    0    0    -1  
 $EndComp
-Text Notes 4500 6000 0    50   ~ 0
-1.8V really LDO
 Wire Wire Line
 	4600 1900 5050 1900
 Wire Wire Line
@@ -198,23 +145,23 @@ Connection ~ 4300 2000
 $Comp
 L rgbntsc-rescue:CP_Small-Device C9
 U 1 1 5CA25A7B
-P 5650 6600
-F 0 "C9" H 5738 6646 50  0000 L CNN
-F 1 "33u" H 5738 6555 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 5650 6600 50  0001 C CNN
-F 3 "~" H 5650 6600 50  0001 C CNN
-F 4 "C127970" H 5650 6600 50  0001 C CNN "LCSC"
-	1    5650 6600
+P 4500 6600
+F 0 "C9" H 4588 6646 50  0000 L CNN
+F 1 "33u" H 4588 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 4500 6600 50  0001 C CNN
+F 3 "~" H 4500 6600 50  0001 C CNN
+F 4 "C127970" H 4500 6600 50  0001 C CNN "LCSC"
+	1    4500 6600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 6500 5650 6300
+	4500 6500 4500 6300
 Wire Wire Line
-	5650 6700 5650 6900
+	4500 6700 4500 6900
 Text Label 3850 1900 0    50   ~ 0
 Red
 $Comp
-L ossc:SCART_CONN J3
+L rgbntsc-rescue:SCART_CONN-ossc J3
 U 1 1 5FA9BD50
 P 2050 1500
 F 0 "J3" H 2050 2365 50  0000 C CNN
@@ -299,7 +246,7 @@ Connection ~ 4400 2100
 Wire Wire Line
 	4400 2100 4400 2250
 $Comp
-L ossc:VGA J2
+L rgbntsc-rescue:VGA-ossc J2
 U 1 1 5CCA16CB
 P 2000 3200
 F 0 "J2" H 2000 4087 60  0000 C CNN
@@ -486,7 +433,7 @@ F 4 "NOT FITTED" H 2700 4650 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L converted:VCC #PWR07
+L rgbntsc-rescue:VCC-converted #PWR07
 U 1 1 5CCEB77D
 P 2700 4250
 F 0 "#PWR07" H 2700 4100 50  0001 C CNN
@@ -548,7 +495,7 @@ F 3 "" H 2700 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Videobits:USB_C_Receptacle_Power J1
+L rgbntsc-rescue:USB_C_Receptacle_Power-Videobits J1
 U 1 1 5FA9BD53
 P 1100 6150
 F 0 "J1" H 1207 6667 50  0000 C CNN
@@ -737,20 +684,6 @@ Wire Wire Line
 	3850 1400 3850 1800
 Wire Wire Line
 	1450 4550 2200 4550
-Wire Wire Line
-	5250 6300 5650 6300
-Wire Wire Line
-	5250 6900 5650 6900
-Connection ~ 5650 6300
-Wire Wire Line
-	5650 6300 6050 6300
-Connection ~ 5650 6900
-Wire Wire Line
-	5650 6900 6050 6900
-Wire Wire Line
-	4050 6300 4500 6300
-Wire Wire Line
-	4050 6900 5250 6900
 $Comp
 L rgbntsc-rescue:Fiducial-Mechanical GOTE1
 U 1 1 5FA9BD72
@@ -912,7 +845,7 @@ F 3 "" H 7650 2500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Videobits:CXA2075 U5
+L rgbntsc-rescue:CXA2075-Videobits U5
 U 1 1 5F8DCCCB
 P 7850 2000
 F 0 "U5" H 8175 2503 60  0000 C CNN
@@ -977,7 +910,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 3250 3000 3350
 $Comp
-L converted:VCC #PWR014
+L rgbntsc-rescue:VCC-converted #PWR014
 U 1 1 5FAA17A4
 P 3450 2950
 F 0 "#PWR014" H 3450 2800 50  0001 C CNN
@@ -1035,7 +968,7 @@ F 4 "C17513" H 3000 3450 50  0001 C CNN "LCSC"
 	-1   0    0    1   
 $EndComp
 $Comp
-L converted:VCC #PWR09
+L rgbntsc-rescue:VCC-converted #PWR09
 U 1 1 5FAA17C4
 P 3000 3550
 F 0 "#PWR09" H 3000 3400 50  0001 C CNN
@@ -1203,7 +1136,7 @@ F 4 "C20638" H 9000 1900 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP_Small C14
+L rgbntsc-rescue:CP_Small-Device C14
 U 1 1 5FD38DD8
 P 9600 2100
 F 0 "C14" V 9550 1900 50  0000 C CNN
@@ -1215,7 +1148,7 @@ F 4 "NOT FITTED" H 9600 2100 50  0001 C CNN "LCSC"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:CP_Small C13
+L rgbntsc-rescue:CP_Small-Device C13
 U 1 1 5FD1A5C0
 P 9600 2000
 F 0 "C13" V 9550 1800 50  0000 C CNN
@@ -1227,7 +1160,7 @@ F 4 "NOT FITTED" H 9600 2000 50  0001 C CNN "LCSC"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:CP_Small C12
+L rgbntsc-rescue:CP_Small-Device C12
 U 1 1 5FD18E68
 P 9600 1900
 F 0 "C12" V 9550 1700 50  0000 C CNN
@@ -1276,7 +1209,7 @@ $EndComp
 Wire Wire Line
 	5050 2100 4800 2100
 $Comp
-L Videobits:TPF144-VR U6
+L rgbntsc-rescue:TPF144-VR-Videobits U6
 U 1 1 5FE6286C
 P 5450 2150
 F 0 "U6" H 5475 3009 60  0000 C CNN
@@ -1487,7 +1420,7 @@ $EndComp
 Wire Wire Line
 	7550 3350 7550 2400
 $Comp
-L Device:Ferrite_Bead_Small FB1
+L rgbntsc-rescue:Ferrite_Bead_Small-Device FB1
 U 1 1 60AAC928
 P 2100 5950
 F 0 "FB1" V 2337 5950 50  0000 C CNN
@@ -1513,7 +1446,7 @@ F 4 "C17513" H 6400 6400 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D1
+L rgbntsc-rescue:LED-Device D1
 U 1 1 60C1D817
 P 6400 6750
 F 0 "D1" V 6439 6632 50  0000 R CNN
@@ -1530,4 +1463,28 @@ Wire Wire Line
 	6400 6500 6400 6600
 Wire Wire Line
 	6400 6300 6050 6300
+Wire Wire Line
+	4050 6900 4500 6900
+Wire Wire Line
+	4050 6300 4500 6300
+Connection ~ 4500 6300
+Connection ~ 4500 6900
+Wire Wire Line
+	4500 6300 4950 6300
+Wire Wire Line
+	4500 6900 6050 6900
+$Comp
+L rgbntsc-rescue:Ferrite_Bead_Small-Device FB2
+U 1 1 61939B87
+P 5050 6300
+F 0 "FB2" V 5287 6300 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 5196 6300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" V 4980 6300 50  0001 C CNN
+F 3 "~" H 5050 6300 50  0001 C CNN
+F 4 "C1017" V 5050 6300 50  0001 C CNN "LCSC"
+	1    5050 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 6300 6050 6300
 $EndSCHEMATC
