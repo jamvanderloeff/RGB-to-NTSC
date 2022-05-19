@@ -21,6 +21,6 @@ Comment,Designator,Footprint,LCSC, LCSC
 "1k","R5,R21,R22","Resistor_SMD:R_0805_2012Metric","","C17513"
 "LM1881","U1","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","","NOT FITTED"
 "74AHCT1G86","U2,U3","Package_TO_SOT_SMD:SOT-23-5","","C43417"
+"THS7374","U4","Package_SO:TSSOP-14_4.4x5mm_P0.65mm",""
 "CXA2075","U5","Package_SO:SO-24_5.3x15mm_P1.27mm","","NOT FITTED"
-"TPF144-VR","U6","Package_SO:MSOP-10_3x3mm_P0.5mm","","C155447"
-"O32253579545MHEA4SI","X1","Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm","","C70606"
+"S7D3.579545A20F30T","X1","Oscillator:Oscillator_SMD_Abracon_ASV-4Pin_7.0x5.1mm","","C386914"

@@ -1,4 +1,4 @@
-18791142584233546
+19174369632249129
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -81634,13 +81634,6 @@ custom_components
 15
 4
 custom_components
-3xRCA_CONN_SINGLE
-
-
-0
-15
-4
-custom_components
 ACHL-OSC
 
 SMA Connector
@@ -81654,6 +81647,13 @@ Power Jack
 0
 3
 3
+custom_components
+CDRH2D14
+
+
+0
+2
+2
 custom_components
 DM3D-SF
 
@@ -81675,6 +81675,13 @@ Crystal Quarz Rundgehaeuse round vertical stehend Uhrenquarz Diam. 3mm
 0
 2
 2
+custom_components
+GW22RxV
+
+
+0
+8
+6
 custom_components
 HDMI_CONN-10029449-111RLF
 
@@ -81718,12 +81725,19 @@ PB_SW_M7
 2
 2
 custom_components
+RoHS-logo
+
+
+0
+0
+0
+custom_components
 SCART_CONN
 
 
 0
-23
-22
+21
+21
 custom_components
 SJ1-3533NG
 
@@ -81871,6 +81885,13 @@ VGA_CONN
 0
 17
 15
+custom_components
+WEEE-logo
+
+
+0
+0
+0
 phoenix-adapter
 Cheapo_RCA_dual
 
@@ -81948,6 +81969,13 @@ USB C Type-C Receptacle SMD
 0
 10
 7
+videobits
+VID28-XX_DownMount
+VID28-XX Dual-Shaft Stepper Motor
+Stepper, motor, VID28
+0
+8
+8
 videobits
 borgar
 

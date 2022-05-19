@@ -145,19 +145,19 @@ Connection ~ 4300 2000
 $Comp
 L rgbntsc-rescue:CP_Small-Device C9
 U 1 1 5CA25A7B
-P 5650 6600
-F 0 "C9" H 5738 6646 50  0000 L CNN
-F 1 "33u" H 5738 6555 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 5650 6600 50  0001 C CNN
-F 3 "~" H 5650 6600 50  0001 C CNN
-F 4 "C127970" H 5650 6600 50  0001 C CNN "LCSC"
-	1    5650 6600
+P 4500 6600
+F 0 "C9" H 4588 6646 50  0000 L CNN
+F 1 "33u" H 4588 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 4500 6600 50  0001 C CNN
+F 3 "~" H 4500 6600 50  0001 C CNN
+F 4 "C127970" H 4500 6600 50  0001 C CNN "LCSC"
+	1    4500 6600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 6500 5650 6300
+	4500 6500 4500 6300
 Wire Wire Line
-	5650 6700 5650 6900
+	4500 6700 4500 6900
 Text Label 3850 1900 0    50   ~ 0
 Red
 $Comp
@@ -684,12 +684,6 @@ Wire Wire Line
 	3850 1400 3850 1800
 Wire Wire Line
 	1450 4550 2200 4550
-Connection ~ 5650 6300
-Wire Wire Line
-	5650 6300 6050 6300
-Connection ~ 5650 6900
-Wire Wire Line
-	5650 6900 6050 6900
 $Comp
 L rgbntsc-rescue:Fiducial-Mechanical GOTE1
 U 1 1 5FA9BD72
@@ -1470,7 +1464,27 @@ Wire Wire Line
 Wire Wire Line
 	6400 6300 6050 6300
 Wire Wire Line
-	4050 6900 5650 6900
+	4050 6900 4500 6900
 Wire Wire Line
-	4050 6300 5650 6300
+	4050 6300 4500 6300
+Connection ~ 4500 6300
+Connection ~ 4500 6900
+Wire Wire Line
+	4500 6300 4950 6300
+Wire Wire Line
+	4500 6900 6050 6900
+$Comp
+L rgbntsc-rescue:Ferrite_Bead_Small-Device FB2
+U 1 1 61939B87
+P 5050 6300
+F 0 "FB2" V 5287 6300 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 5196 6300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" V 4980 6300 50  0001 C CNN
+F 3 "~" H 5050 6300 50  0001 C CNN
+F 4 "C1017" V 5050 6300 50  0001 C CNN "LCSC"
+	1    5050 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 6300 6050 6300
 $EndSCHEMATC
