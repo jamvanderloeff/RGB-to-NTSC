@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name rgbntsc-rescue)(type Legacy)(uri ${KIPRJMOD}/rgbntsc-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "rgbntsc-rescue")(type "KiCad")(uri "${KIPRJMOD}/rgbntsc-rescue.kicad_sym")(options "")(descr ""))
 )
