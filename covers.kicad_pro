@@ -272,7 +272,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbs-withaudio/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
